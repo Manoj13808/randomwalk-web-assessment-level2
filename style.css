@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    flex-direction: column;
+    background: rgb(8,68,139);
+    background: linear-gradient(90deg, rgba(8,68,139,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    
+    border-radius: 10px ;
+}
+
+.cell:hover {
+    background-color: #e6e1e1;
+    box-shadow: 5px 5px rgba(199, 195, 195, 0.142);
+    
+}
+
+#restartButton {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    
+  }
+  
+  #restartButton:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+    box-shadow: 5px 5px 5px rgba(193, 189, 189, 0.548);
+  }
+  
+  #restartButton:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  #restartButton:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+
+
+.game-status {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: whitesmoke;
+}
